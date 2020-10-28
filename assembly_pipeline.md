@@ -1,6 +1,8 @@
-### trim adapter and require minimum read length
+### Trim adapter sequence and require minimum read length
 ### cutadapt version 1.15
+```bash
 cutadapt --adapter AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT --output=sample.R1.trimmed.fastq --paired-output=sample.R2.trimmed.fastq --pair-filter=any --minimum-length=20 sample.R1.fastq sample.R2.fastq
+```
 
 # build genome assembly index
 STAR --runMode genomeGenerate --runThreadN 8 --genomeDir cascadePacBioMasked --genomeFastaFiles genome.fasta
