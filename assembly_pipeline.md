@@ -13,7 +13,7 @@ STAR --runMode genomeGenerate --runThreadN 8 --genomeDir cascadePacBioMasked --g
 # Align RNAseq with STAR
 ### STAR 2.7.1a
 ```bash
-STAR --runMode alignReads --genomeLoad NoSharedMemory --soloStrand Forward --outSAMtype BAM SortedByCoordinate --genomeDir /path/to/cascadePacBioMasked --readFilesIn sample.R1.trimmed.fastq sample.R2.trimmed.fastq --outFileNamePrefix cascadeAlignments
+STAR --runMode alignReads --genomeLoad NoSharedMemory --outSAMtype BAM SortedByCoordinate --genomeDir /path/to/cascadePacBioMasked --readFilesIn sample.R1.trimmed.fastq sample.R2.trimmed.fastq --outFileNamePrefix cascadeAlignments
 ```
 
 # Create finalOutFileList.txt 
